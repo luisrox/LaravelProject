@@ -24,7 +24,8 @@ class StoreCurso extends FormRequest
         return [
             'name' => 'required',
             'descripcion' => 'required',
-            'categoria' => 'required'
+            'categoria' => 'required',
+            'slug' => 'required|unique:cursos'
         ];
     }
 
